@@ -1,6 +1,6 @@
-#Portafolio Fabian Andres Urrutia Chaverra
+# Portafolio Fabian Andres Urrutia Chaverra
 Portafolio personal en curso realizado con Astro y Tailwind.
 
-###Instalación
+### Instalación
 
 `$ npm run dev`
