@@ -1,14 +1,44 @@
+---
+import Socials from "./Socials.astro"
+import styles from "../Styles/styles.css"
+---
 <div class="py-40 px-22">
-    <h2 class="text-5xl text-emerald-400"> Fabian Andres Urrutia Chaverra</h2>
-    <div class="flex flex-row">
-        <img class="size-60 mb-4" src="https://a.espncdn.com/photo/2020/1012/r759684_1296x729_16-9.jpg" alt="Jordan">
-       <ul class="list-disc">
+    <h2 class="text-4xl lg:text-6xl text-emerald-400 text-center"> Fabian Andres Urrutia Chaverra</h2>
+    <div class="flex flex-row space-x-8">
+    <img class="size-60 mb-4" src="https://a.espncdn.com/photo/2020/1012/r759684_1296x729_16-9.jpg" alt="Jordan">
+       <ul class="list-disc flex justify-between flex-col">
         <li>
-            <span class="text-2xl">Desarrollador web enfocado en React</span>
+            <span class="text-xl lg:text-2xl text-black-">Ingeniero de Sistemas</span>
         </li>
         <li>
-            <span class="text-2xl text-cyan-400">Pregrado en Ingenieria de Sistemas en la Universidad del Valle</span>
+            <span class="text-xl lg:text-2xl text-cyan-400">Pregrado en Ingenieria de Sistemas en la Universidad del Valle</span>
+        </li>
+        <li>
+            <span class="text-xl lg:text-2xl text-yellow-300">1 año de experiencia de desarollo de aplicaciones en la web </span>
+        </li>
+        <li>
+            <span class="text-xl lg:text-2xl text-emerald-400">Cali, Valle del Cauca, Colombia</span>
+        </li>
+        <li>
+            <span class="text-xl lg:text-2xl text-red-400">Especializado en crear aplicaciones unicas</span>
         </li>
        </ul>
     </div>
+    <nav class="flex flex-row mt-2 gap-x-3">
+        <Socials class="border-cyan-500 borde" href="https://www.linkedin.com/in/fabi%C3%A1n-urrutia-ab328b2aa">
+            Linkedin
+        </Socials>
+        <Socials class="border-red-400 borde" href="https://github.com/fauchx">
+            Github
+        </Socials>
+    </nav>
 </div>
+<style is:global>
+    .borde{
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    transition:all .5s ease;
+    }
+    .borde:hover{
+        box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
+    }
+</style>
