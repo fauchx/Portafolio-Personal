@@ -1,35 +1,46 @@
 ---
 import Socials from "./Socials.astro"
-import styles from "../Styles/styles.css"
+import LinkedinItem from "../items/LinkedinItem.astro"
+import GithubItem from "../items/GithubItem.astro"
+import FileItem from "../items/FileItem.astro"
+
 ---
-<div class="py-40 px-22">
-    <h2 class="text-4xl lg:text-6xl text-emerald-400 text-center"> Fabian Andres Urrutia Chaverra</h2>
-    <div class="flex flex-row space-x-8">
-    <img class="size-60 mb-4" src="https://a.espncdn.com/photo/2020/1012/r759684_1296x729_16-9.jpg" alt="Jordan">
-       <ul class="list-disc flex justify-between flex-col">
-        <li>
-            <span class="text-xl lg:text-2xl text-black-">Ingeniero de Sistemas</span>
-        </li>
-        <li>
-            <span class="text-xl lg:text-2xl text-cyan-400">Pregrado en Ingenieria de Sistemas en la Universidad del Valle</span>
-        </li>
-        <li>
-            <span class="text-xl lg:text-2xl text-yellow-300">1 año de experiencia de desarollo de aplicaciones en la web </span>
-        </li>
-        <li>
-            <span class="text-xl lg:text-2xl text-emerald-400">Cali, Valle del Cauca, Colombia</span>
-        </li>
-        <li>
-            <span class="text-xl lg:text-2xl text-red-400">Especializado en crear aplicaciones unicas</span>
-        </li>
-       </ul>
+<div class="py-36  px-22">
+    <h2 class="text-4xl lg:text-6xl text-emerald-400 text-center mb-16 "> Fabian Andres Urrutia Chaverra</h2>
+    <div class="flex flex-row space-x-12">
+        <div class="imagen relative"> 
+            <img class="size-44 lg:size-64 mb-4 rounded-s-xl" src="https://a.espncdn.com/photo/2020/1012/r759684_1296x729_16-9.jpg" alt="Jordan">
+        </div>
+        <ul class="list-disc flex justify-between flex-col mt-4">
+            <li>
+                <span class="text-2xl lg:text-2xl text-black-">Ingeniero de Sistemas</span>
+            </li>
+            <li>
+                <span class="text-2xl lg:text-2xl text-cyan-400">Pregrado en Ingenieria de Sistemas en la Universidad del Valle</span>
+            </li>
+            <li>
+                <span class="text-2xl lg:text-2xl text-yellow-300">1 año de experiencia de desarollo de aplicaciones en la web </span>
+            </li>
+            <li>
+                <span class="text-2xl lg:text-2xl text-emerald-400">Cali, Valle del Cauca, Colombia</span>
+            </li>
+            <li>
+                <span class="text-2xl lg:text-2xl text-red-400">Especializado en crear aplicaciones unicas</span>
+            </li>
+           </ul>
     </div>
-    <nav class="flex flex-row mt-2 gap-x-3">
+    <nav class="flex flex-row mt-9  gap-x-3">
         <Socials class="border-cyan-500 borde" href="https://www.linkedin.com/in/fabi%C3%A1n-urrutia-ab328b2aa">
             Linkedin
+            <LinkedinItem class="size-6"/>
         </Socials>
         <Socials class="border-red-400 borde" href="https://github.com/fauchx">
             Github
+            <GithubItem class="size-6"/>
+        </Socials>
+        <Socials class="border-emerald-400 borde ml-auto" href="../pdf/CV Fabian Andres Urrutia.pdf" >
+            Mi cv
+            <FileItem class="size-6"/>
         </Socials>
     </nav>
 </div>
@@ -41,4 +52,42 @@ import styles from "../Styles/styles.css"
     .borde:hover{
         box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
     }
+    ::marker {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='14' viewBox='0 0 50 50'%3E%3Cpath d='M46.4 16.2c-2.3-2.3-5.4-3.5-8.4-4.5-.5-.2-1.1-.3-1.6-.5-1.6-1.6-3.7-2.8-6.2-3.2-1-.2-1.9.1-2.5.6-.9-.3-1.8-.6-2.7-.8-3.2-1-6.4-1.8-9.5-.1-1 .5-1.9 1.2-2.7 2-6.4 1.4-11.7 5-12.4 12.7C0 27 1.9 31.5 4.9 34.9c.1.6.2 1.1.4 1.7 1 3.2 3.3 5.7 6.7 6.5 2.7.6 5.4-.2 7.9-1.2 3.3.4 6.7.3 9.9 0 6.5-.7 13.3-2.8 17.1-8.5 3.6-5.2 4-12.6-.5-17.2zm-17.3.9c2.1.4 4 1.7 4.7 3.8 0 .5-.1 1.1-.2 1.6-.3 1.4-.8 2.6-1.6 3.7-.7.2-1.5.1-2.3-.4-.8-.4-1.6-1-2.2-1.6-.4-.4-1.2-1.7-1.6-1.9 3.4 1.3 5.1-3 3.2-5.2zm-11.6 9.7c.2-1.9 1.1-3.9 2.3-5.5-.4 2.1.3 4.2 1.7 6 1.3 1.7 3.1 3.2 5 4.2-.2.1-.4.2-.6.4-.1 0-.1.1-.2.1-3.9.2-8.7-.8-8.2-5.2zm-6.4 3.1c.1.3.1.7.2 1 .2.6.4 1.2.7 1.8-.4-.2-.7-.5-1-.7.1-.8.1-1.4.1-2.1zm31.2-1.3c-.9 1.7-2.1 3.1-3.7 4.1 2-2.1 3.4-4.7 4-7.6.2-.7.3-1.4.3-2.1.6 1.5.5 3.3-.6 5.6z'/%3E%3C/svg%3E") ' ';
+}
+
+li:nth-child(3n)::marker {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='14' viewBox='0 0 50 50'%3E%3Cpath d='M46.5 12.5c-.4-1.1-1.3-1.8-2.2-2-4.2-4-11.6-4.3-17.1-4.1-6.9.3-13.9 2.1-19.4 6.5C2 17.5-2.4 25.7 2.5 32.6c2.2 3.2 5.5 4.9 9 5.5 3.3 1.7 6.7 3.3 10.2 4.4 7.8 2.3 17 1.6 23.2-4.3 7.3-7 4.8-17.3 1.6-25.7zm-20.2 2.7c.6 0 1.3 0 1.8.2 1.1.4 1.7 1.3 2 2.3-1-1.2-2.4-2.1-3.8-2.5zm-1.4 6.6c.9.9 1.3 2.2-.2 2.3-2 .2-1.1-1.9.2-2.3zm-11.8 9.8c-.6-.3-2.9-1.1-3.2-1.8-.2-.5 1.4-3.1 2.1-4.2.3.5.7 1 1.2 1.4 0 .3.1.6.2.8.5 1.9 1.5 3.1 2.9 4h-.2c-.8.1-1.6.1-2.5-.1-.2 0-.3 0-.5-.1zM24 36.4c1.6-.7 3-1.5 4.3-2.5.8.2 1.7.3 2.5.5 2.5.4 5.2.9 7.7.6-.9.6-2 1.1-3 1.4-3.9 1.3-7.7 1-11.5 0z'/%3E%3C/svg%3E") ' ';
+}
+
+li:nth-child(3n - 1)::marker {
+	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='14' viewBox='0 0 50 50'%3E%3Cpath d='M48.3 23.7c-1-9.9-9.9-15.6-18.8-17.8-8.2-2.1-18.8-2.6-24.6 4.8C.6 16.2 1 23.6 4.3 29.3c-.5 1-.8 2-1 3-.6 4 2 7.6 5.1 10 5.9 4.4 14 4.2 19.6-.4 1.5 0 2.9-.2 4.4-.5 1.8 0 3.5 0 5.3-.1 2.3-.1 3.5-1.9 3.5-3.7 4.5-3.3 7.7-8.2 7.1-13.9zM9.1 17.8c1.1-4.1 4.9-5.8 8.8-6.1.9-.1 1.9-.1 2.9-.1-3.2 1.6-6.3 4.6-8 7.4-.1.1-.1.2-.2.3-1.1.9-2.1 1.9-3 2.9-.2.2-.4.4-.5.6-.4-1.7-.5-3.3 0-5z'/%3E%3C/svg%3E") ' ';
+}
+.imagen::before,
+.imagen::after {
+    content: '';
+    position: absolute;
+    top: -10px; /* Ajusta según el grosor deseado */
+    bottom: -10px; /* Ajusta según el grosor deseado */
+    left: -10px; /* Ajusta según el grosor deseado */
+    right: -10px; /* Ajusta según el grosor deseado */
+    z-index: -1;
+    border: 3px solid #000; /* Ancho del borde */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5); /* Sombra reducida */
+}
+
+.imagen::before {
+    border-color: rgb(192, 143, 143); /* Color del borde */
+    border-radius: 20px; /* Bordes redondeados */
+    transform: rotate(-3deg); /* Ajusta la inclinación del borde */
+}
+
+.imagen::after {
+    border-color: rgb(75, 75, 99); /* Color del borde */
+    border-radius: 20px; /* Bordes redondeados */
+    transform: rotate(3deg); /* Ajusta la inclinación del borde */
+}
+
+
 </style>
