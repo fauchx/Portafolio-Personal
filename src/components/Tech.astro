@@ -1,0 +1,68 @@
+---
+import Socials from "./Socials.astro"
+
+---
+<div class="px-22 mb-20">
+    <h2 class="text-6xl text-center text-yellow-300 mb-10">
+        TECNOLOGIAS
+    </h2>
+    <nav class="flex flex-row mt-4 justify-between">
+        <div class="tech inline-block flex-col">
+            <Socials class="border-red-400 borde hover:cursor-pointer">
+                Frontend
+            </Socials>
+            <ul class="hidden absolute mt-4 bg-white border border-gray-300 p-2">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+        </div>
+        <div class="tech inline-block flex-col">
+            <Socials class="border-emerald-400 borde hover:cursor-pointer" >
+                Backend
+            </Socials>
+            <ul class="hidden absolute  mt-4 bg-white border border-gray-300 p-2">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+        </div>
+        <div class="tech inline-block flex-col">
+            <Socials class="border-cyan-500 borde hover:cursor-pointer" >
+                Extra
+            </Socials>
+            <ul class="hidden absolute  mt-4 bg-white border border-gray-300 p-2">
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<style is:global>
+    .borde{
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    transition:all .5s ease;
+    }
+    .borde:hover{
+        box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
+    }
+    .tech:hover ul {
+        display: block;
+    }
+    .tech ul {
+        display: none;
+    }
+</style>
+
+<script>
+    function hideList(event: { currentTarget: any; }) {
+      const target = event.currentTarget;
+      const ul = target.querySelector('ul');
+      if (ul) {
+        ul.style.display = 'none';
+      }
+    }
+  </script>
+  
+  

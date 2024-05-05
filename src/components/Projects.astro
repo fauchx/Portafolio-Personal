@@ -1,12 +1,38 @@
 ---
-import ProjectPanel from "./ProjectPanel.astro"
+import data from "../items/data/projects.json"
 ---
 <div class="px-22">
-    <h2 class="text-6xl text-red-400 text-center">Proyectos</h2>
-    <div class="flex  flex-wrap  justify-around mt-4">
-        <ProjectPanel src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2023/11/07/16993381221192.jpg"/>
-        <ProjectPanel  src="https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(jpeg)/origin-imgresizer.eurosport.com/2023/12/07/3839658-78026088-2560-1440.jpg"/>
-        <ProjectPanel  src="https://media.gq.com.mx/photos/61b3ab1dd72aa58be5f9a143/1:1/w_2063,h_2063,c_limit/Curry.jpg"/>
-        <ProjectPanel  src="https://ca-times.brightspotcdn.com/dims4/default/0b6edc8/2147483647/strip/true/crop/3840x2160+0+0/resize/1200x675!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F5a%2Ff1%2Ffbedcdff48bca7bbeff20acd973c%2Fnets-lakers-basketball-48367.jpg"/>
+    <h2 class="text-6xl text-center text-gray-900 mb-10">
+        PROYECTOS
+    </h2>
+    <div class="grid grid-cols-2 gap-y-6 gap-x-24">
+        {data.map((project) => (
+            <div class="flex flex-col project-item justify-center items-center">
+                <a href={project.url}>
+                    <img src={project.avatar} alt="" class="size-60  borde hover:size-72  self-center"/>
+                </a>
+                <h3 class="text-center text-3xl text-cyan-400">
+                    {project.name}
+                </h3>
+                <h4 class="text-center text-xl text-gray-800 opacity-0 transition-opacity">
+                    {project.content}
+                </h4>
+            </div>
+        ))}
     </div>
 </div>
+
+
+<style is:global>
+    .project-item:hover h4 {
+        opacity: 1;
+    }
+
+    .borde{
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    transition:all .5s ease;
+    }
+    .borde:hover{
+        box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
+    }
+</style>

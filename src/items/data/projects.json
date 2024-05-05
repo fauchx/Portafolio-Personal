@@ -1,0 +1,46 @@
+[
+    {
+      "name": "MGPB",
+      "content": "Pagina web que genera microservicios a partir de un product backlog",
+      "avatar": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2023/11/07/16993381221192.jpg" ,
+      "active": true,
+      "url": "https://github.com/sebasgc215/EBPM-main"
+      
+    },
+    {
+      "name": "Visualizador de microservicios",
+      "content": "Pagina web que evalua los microservicios generados por el product backlog con metricas estipuladas",
+      "avatar": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2023/11/07/16993381221192.jpg" ,
+      "active": true,
+      "url": "https://github.com/fauchx/MicroserviceVisualization"
+    },
+    {
+      "name": "Joker Events",
+      "content": "Pagina web que simula todo el proceso de venta de boletas para eventos",
+      "avatar": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2023/11/07/16993381221192.jpg" ,
+      "active": true,
+      "url": "https://github.com/fauchx"
+    },
+    {
+      "name": "Planifiacion de eventos deportivos",
+      "content": "Pagina web para solucionar problemas de planificación de eventos deportivos usando Minizinc",
+      "avatar": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2023/11/07/16993381221192.jpg" ,
+      "active": true,
+      "url": "https://github.com/fauchx"
+    },
+    {
+      "name": "Swipe Match tinder",
+      "content": "Copia html de la funcion swipe match en tinder",
+      "avatar": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2023/11/07/16993381221192.jpg" ,
+      "active": true,
+      "url": "https://github.com/fauchx/Clon-Swipe-Match-Tinder"
+    },
+    {
+        "name": "Coinbase",
+        "content": "Emulación de Coinbase utilizando HTML y SASS",
+        "avatar": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2023/11/07/16993381221192.jpg" ,
+        "active": true,
+        "url": "https://github.com/fauchx/HTML-SASS-Project"
+      }
+  ]
+  
