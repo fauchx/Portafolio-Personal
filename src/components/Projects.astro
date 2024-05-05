@@ -5,7 +5,7 @@ import data from "../items/data/projects.json"
     <h2 class="text-6xl text-center text-gray-900 mb-10">
         PROJECTS
     </h2>
-    <div class="grid grid-cols-2 gap-y-6 gap-x-24">
+    <div class="grid sm:grid-cols-2 grid-col-1 gap-y-6 gap-x-24">
         {data.map((project) => (
             <div class="flex flex-col project-item justify-center items-center">
                 <a href={project.url}>
@@ -14,7 +14,7 @@ import data from "../items/data/projects.json"
                 <h3 class="text-center text-3xl text-cyan-400">
                     {project.name}
                 </h3>
-                <h4 class="text-center text-xl text-gray-800 opacity-0 transition-opacity">
+                <h4 class="text-center text-xl text-gray-800 sm:opacity-0 opacity-1 transition-opacity">
                     {project.content}
                 </h4>
             </div>
@@ -31,10 +31,12 @@ import data from "../items/data/projects.json"
     .imga{
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
     transition:all .5s ease;
-    }
-    .imga:hover{
+    } 
+    @media (min-width: 640px) {
+        .imga:hover{
         box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
         width: 46rem;
         height: 21rem;
+    }
     }
 </style>

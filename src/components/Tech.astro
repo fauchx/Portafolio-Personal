@@ -2,7 +2,7 @@
 import Socials from "./Socials.astro"
 
 ---
-<div class="px-22 mb-20">
+<div class="px-22 mb-w0">
     <h2 class="text-6xl text-center text-yellow-300 mb-10">
         TECH I USE
     </h2>
@@ -58,9 +58,12 @@ import Socials from "./Socials.astro"
     .tech:hover ul {
         display: block;
     }
-    .tech ul {
+    @media (min-width: 640px) {
+        .tech ul {
         display: none;
     }
+    }
+    
 </style>
 
 <script>
