@@ -1,44 +1,37 @@
 [
     {
       "name": "MGPB",
-      "content": "Pagina web que genera microservicios a partir de un product backlog",
-      "avatar": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2023/11/07/16993381221192.jpg" ,
+      "content": "Web page for microservice generation based on a product backlog",
+      "avatar": "../../../src/items/MGPB.PNG" ,
       "active": true,
       "url": "https://github.com/sebasgc215/EBPM-main"
       
     },
     {
-      "name": "Visualizador de microservicios",
-      "content": "Pagina web que evalua los microservicios generados por el product backlog con metricas estipuladas",
-      "avatar": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2023/11/07/16993381221192.jpg" ,
+      "name": "Microservice Visualization",
+      "content": "Web page made for visualization of microservices generated and metrics evaluated",
+      "avatar": "../../../src/items/visualizador.PNG" ,
       "active": true,
       "url": "https://github.com/fauchx/MicroserviceVisualization"
     },
     {
-      "name": "Joker Events",
-      "content": "Pagina web que simula todo el proceso de venta de boletas para eventos",
-      "avatar": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2023/11/07/16993381221192.jpg" ,
+      "name": "Sports event planning",
+      "content": "Web page that solves the planning problem for sports events using Minizinc",
+      "avatar": "../../../src/items/calendario.PNG" ,
       "active": true,
-      "url": "https://github.com/fauchx"
-    },
-    {
-      "name": "Planifiacion de eventos deportivos",
-      "content": "Pagina web para solucionar problemas de planificación de eventos deportivos usando Minizinc",
-      "avatar": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2023/11/07/16993381221192.jpg" ,
-      "active": true,
-      "url": "https://github.com/fauchx"
+      "url": "https://github.com/fauchx/CalDepF"
     },
     {
       "name": "Swipe Match tinder",
-      "content": "Copia html de la funcion swipe match en tinder",
-      "avatar": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2023/11/07/16993381221192.jpg" ,
+      "content": "HTML copy of the swipe match function of Tinder",
+      "avatar": "../../../src/items/swipe match.PNG" ,
       "active": true,
       "url": "https://github.com/fauchx/Clon-Swipe-Match-Tinder"
     },
     {
         "name": "Coinbase",
-        "content": "Emulación de Coinbase utilizando HTML y SASS",
-        "avatar": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2023/11/07/16993381221192.jpg" ,
+        "content": "Copy of Coinbase homepage using HTML, CSS and SASS",
+        "avatar": "../../../src/items/coinbase.png" ,
         "active": true,
         "url": "https://github.com/fauchx/HTML-SASS-Project"
       }

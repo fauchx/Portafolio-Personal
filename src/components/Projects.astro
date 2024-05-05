@@ -3,13 +3,13 @@ import data from "../items/data/projects.json"
 ---
 <div class="px-22">
     <h2 class="text-6xl text-center text-gray-900 mb-10">
-        PROYECTOS
+        PROJECTS
     </h2>
     <div class="grid grid-cols-2 gap-y-6 gap-x-24">
         {data.map((project) => (
             <div class="flex flex-col project-item justify-center items-center">
                 <a href={project.url}>
-                    <img src={project.avatar} alt="" class="size-60  borde hover:size-72  self-center"/>
+                    <img src={project.avatar} alt="" class="size-72 imga border-yellow-300 border-dotted border-4  self-center"/>
                 </a>
                 <h3 class="text-center text-3xl text-cyan-400">
                     {project.name}
@@ -28,11 +28,13 @@ import data from "../items/data/projects.json"
         opacity: 1;
     }
 
-    .borde{
+    .imga{
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
     transition:all .5s ease;
     }
-    .borde:hover{
+    .imga:hover{
         box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
+        width: 46rem;
+        height: 21rem;
     }
 </style>
