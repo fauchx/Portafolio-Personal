@@ -1,27 +1,6 @@
 ---
 import Email from "../items/Email.astro"
-import Copy from "../items/Copy.astro"
 ---
-<script>
-  function myFunction() {
-    var email = "andresurrutia32@gmail.com"; // Replace this with your actual email address
-    var textarea = document.createElement("textarea");
-    textarea.value = email;
-    textarea.style.position = "fixed"; // Ensure it is off-screen
-    document.body.appendChild(textarea);
-    textarea.select();
-    document.execCommand("copy");
-    document.body.removeChild(textarea);
-  }
-
-  document.addEventListener("DOMContentLoaded", function() {
-    // Find the button element
-    var button = document.querySelector("#myInput button");
-
-    // Add event listener to the button
-    button.addEventListener("click", myFunction);
-  });
-</script>
 
 <footer class="mt-20">
   <h2 class="text-4xl lg:text-6xl text-gray-900 text-center"> Contact</h2>
@@ -29,15 +8,9 @@ import Copy from "../items/Copy.astro"
     <label for="default_outlined" id="myInput" class="text-xl gap-x-4 border-cyan-400 m-2 justify-center items-center flex p-2 borde-x bg-white border-dotted border-4 text-gray-900 ">
       andresurrutia32@gmail.com
       <Email class="size-6 ml-4"/>
-      <button class="ml-4">
-        <Copy class="size-6 ml-4"/>
-      </button>
     </label>
   </div>
 </footer>
-
-
-
 
 <style>
   .borde-x{
