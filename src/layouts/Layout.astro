@@ -34,21 +34,19 @@ import '@fontsource/nanum-pen-script';
 		scroll-behavior: smooth;
 	}
 	body{
-		background: white;
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
 		color: black;
+		background-color: rgba(249, 249, 255, 0.9); 
+		background-size: 20px 20px;
+		background-image:  repeating-linear-gradient(0deg, #bebebe, #bebebe 1px, rgba(249, 249, 255, 0.9) 1px, rgba(249, 249, 255, 0.9)); 
 	}
 	@media (prefers-reduced-motion: reduce) {
 		html{
 			scroll-behavior: auto;
 		}		
 	}
-	.custom-background {
-    background-image: radial-gradient(#00000070 1px, #e5e7eb 1px, transparent 1px);
-    background-size: 16px 16px;
-    mask-image: radial-gradient(ellipse 50% 50% at 50% 50%, #000 70%, transparent 100%);
-	}
+	
 
 </style>
