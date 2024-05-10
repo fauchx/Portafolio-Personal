@@ -2,7 +2,7 @@
     {
       "name": "MGPB",
       "content": "Web page for microservice generation based on a product backlog",
-      "avatar": "https://github.com/fauchx/Portafolio-Personal/blob/main/src/items/MGPB.PNG?raw=true" ,
+      "avatar": "../../../src/items/mbpg.png" ,
       "active": true,
       "url": "https://github.com/sebasgc215/EBPM-main"
       
@@ -10,28 +10,28 @@
     {
       "name": "Microservice Visualization",
       "content": "Web page made for visualization of microservices generated and metrics evaluated",
-      "avatar": "https://github.com/fauchx/Portafolio-Personal/blob/main/src/items/visualizador.PNG?raw=true" ,
+      "avatar": "../../../src/items/visualizador.png" ,
       "active": true,
       "url": "https://github.com/fauchx/MicroserviceVisualization"
     },
     {
       "name": "Sports event planning",
       "content": "Web page that solves the planning problem for sports events using Minizinc",
-      "avatar": "https://github.com/fauchx/Portafolio-Personal/blob/main/src/items/calendario.png?raw=true" ,
+      "avatar": "../../../src/items/caldep.png" ,
       "active": true,
       "url": "https://github.com/fauchx/CalDepF"
     },
     {
       "name": "Swipe Match tinder",
       "content": "HTML copy of the swipe match function of Tinder",
-      "avatar": "https://github.com/fauchx/Portafolio-Personal/blob/main/src/items/swipe%20match.PNG?raw=true" ,
+      "avatar": "../../../src/items/swipe match.png " ,
       "active": true,
       "url": "https://github.com/fauchx/Clon-Swipe-Match-Tinder"
     },
     {
         "name": "Coinbase",
         "content": "Copy of Coinbase homepage using HTML, CSS and SASS",
-        "avatar": "https://github.com/fauchx/Portafolio-Personal/blob/main/src/items/coinbase.png?raw=true" ,
+        "avatar": "../../../src/items/coinbase.png" ,
         "active": true,
         "url": "https://github.com/fauchx/HTML-SASS-Project"
       }

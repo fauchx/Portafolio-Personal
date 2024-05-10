@@ -2,7 +2,7 @@
 import Socials from "./Socials.astro"
 
 ---
-<div class="px-22 mb-w0">
+<div class="px-22 mb-16">
     <h2 class="text-6xl text-center text-yellow-300 mb-10">
         TECH I USE
     </h2>
@@ -11,7 +11,7 @@ import Socials from "./Socials.astro"
             <Socials class="border-red-400 borde hover:cursor-pointer">
                 Frontend
             </Socials>
-            <ul class="hidden absolute mt-4 border-4 border-dotted border-red-400 p-5">
+            <ul class=" absolute mt-4 border-4 border-dotted sm:text-xl text-xs border-red-400 sm:p-5 p-3">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>React</li>
@@ -24,7 +24,7 @@ import Socials from "./Socials.astro"
             <Socials class="border-emerald-400 borde hover:cursor-pointer" >
                 Backend
             </Socials>
-            <ul class="hidden absolute  mt-4  border-4 border-dotted border-emerald-400 p-5">
+            <ul class=" absolute  mt-4  border-4 border-dotted sm:text-xl text-xs border-emerald-400 sm:p-5 p-3">
                 <li>Express JS</li>
                 <li>Django</li>
                 <li>SpringBoot</li>
@@ -32,12 +32,12 @@ import Socials from "./Socials.astro"
                 <li>MongoDB</li>
             </ul>
         </div>
-        <div class="tech inline-block flex-col">
+        <div class="inline-block flex-col">
             <Socials class="border-cyan-500 borde hover:cursor-pointer" >
                 Extra
             </Socials>
-            <ul class="hidden absolute  mt-4  border-4 border-dotted border-cyan-500 p-5">
-                <li>Clustering Analysis</li>
+            <ul class=" absolute  mt-4  border-4 border-dotted  sm:text-xl text-xs  border-cyan-500 sm:p-5 p-3">
+                <li class="">Clustering Analysis</li>
                 <li>Java</li>
                 <li>Python</li>
                 <li>Docker</li>
@@ -51,19 +51,8 @@ import Socials from "./Socials.astro"
     .borde{
     border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
     transition:all .5s ease;
+    box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
     }
-    .borde:hover{
-        box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
-    }
-    .tech:hover ul {
-        display: block;
-    }
-    @media (min-width: 640px) {
-        .tech ul {
-        display: none;
-    }
-    }
-    
 </style>
 
 <script>
