@@ -34,6 +34,13 @@
         "avatar": "https://github.com/fauchx/Portafolio-Personal/blob/main/src/items/coinbase.png?raw=true" ,
         "active": true,
         "url": "https://github.com/fauchx/HTML-SASS-Project"
+      },
+      {
+        "name": "Realtime chat",
+        "content": "Simple chat using socket.io and ExpressJS",
+        "avatar":"https://github.com/fauchx/Portafolio-Personal/blob/main/src/items/mbpg.png?raw=true",
+        "active":true,
+        "url":"https://github.com/fauchx/ChatRealTime"
       }
   ]
   
