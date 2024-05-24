@@ -38,7 +38,7 @@
       {
         "name": "Realtime chat",
         "content": "Simple chat using socket.io and ExpressJS",
-        "avatar":"https://github.com/fauchx/Portafolio-Personal/blob/main/src/items/mbpg.png?raw=true",
+        "avatar":"https://github.com/fauchx/Portafolio-Personal/blob/main/src/items/Chat%20realtime.PNG?raw=true",
         "active":true,
         "url":"https://github.com/fauchx/ChatRealTime"
       }
