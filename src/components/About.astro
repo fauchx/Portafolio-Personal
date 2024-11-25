@@ -4,61 +4,63 @@ import LinkedinItem from "../items/LinkedinItem.astro"
 import GithubItem from "../items/GithubItem.astro"
 import FileItem from "../items/FileItem.astro"
 import "/node_modules/flag-icons/css/flag-icons.min.css";
+import '@fontsource/bungee-shade';
 ---
 <div class="pt-32 pb-16 px-22">
-    <h2 class="text-4xl lg:text-6xl text-emerald-400 text-center mb-16 "> Fabian Andres Urrutia Chaverra</h2>
+    <h2 class="text-4xl lg:text-6xl text-black text-center mb-16"> Fabian Andres Urrutia Chaverra</h2>
     <div class="flex md:flex-row flex-col items-center md:items-stretch space-x-12">
         <div class="relative "> 
-            <img class="mb-4 img-photo border-red-400 border-dotted border-4" src="https://github.com/fauchx/Portafolio-Personal/blob/main/src/items/yo.jpg?raw=true" alt="Fabian">
+            <img class="mb-4 img-photo rounded-lg ring-4 ring-red-400 shadow-[0_0_15px_5px_rgba(248,113,113,0.5)]" src="https://github.com/fauchx/Portafolio-Personal/blob/main/src/items/yo.jpg?raw=true" alt="Fabian">
         </div>
         <ul class="list-disc flex justify-around  flex-col mt-4">
             <li>
                 <span class="text-2xl lg:text-2xl text-gray-900">Systems engineer</span>
             </li>
             <li>
-                <span class="text-2xl lg:text-2xl text-cyan-400">Degree of  Systems Engineering in Universidad del Valle</span>
+                <span class="text-2xl lg:text-2xl text-gray-900">Degree of  Systems Engineering in Universidad del Valle</span>
             </li>
             <li>
-                <span class="text-2xl lg:text-2xl text-yellow-400">1 year experience of web and software developing</span>
+                <span class="text-2xl lg:text-2xl text-gray-900">1 year experience of web and software developing</span>
             </li>
             <li>
-                <span class="text-2xl lg:text-2xl justify-center items-center gap-x-4 text-emerald-400">Cali, Valle del Cauca, Colombia
+                <span class="text-2xl lg:text-2xl justify-center items-center gap-x-4 text-gray-900">Cali, Valle del Cauca, Colombia
                     <span class=`fi fis fi-co`/>
                 </span>
             </li>
             <li>
-                <span class="text-2xl lg:text-2xl text-red-400">Master in create unique applications</span>
+                <span class="text-2xl lg:text-2xl text-gray-900">Master in create unique applications</span>
             </li>
             <li>
-                <span class="text-2xl lg:text-2xl text-emerald-400">Open to work</span>
+                <span class="text-2xl lg:text-2xl text-emerald-600">Open to work</span>
             </li>
            </ul>
     </div>
         <ul class="list-disc flex gap-x-20  items-center md:items-stretch flex-col md:flex-row mt-4">
             <li class="justify-center items-center gap-x-4 ">
-                <span class="text-2xl lg:text-2xl text-yellow-400">Spanish native</span>
+                <span class="text-2xl lg:text-2xl font-semibold text-yellow-400">Spanish native</span>
                 <span class=`fi fis fi-es`/>
             </li>
             <li class="justify-center items-center gap-x-4 ">
-                <span class="text-2xl lg:text-2xl text-cyan-400">English B2</span>
+                <span class="text-2xl lg:text-2xl font-semibold text-cyan-400">English B2</span>
                 <span class=`fi fis fi-us`/>
             </li>
             <li class="justify-center items-center gap-x-4 " >
-                <span class="text-2xl lg:text-2xl text-red-400">French A2</span>
+                <span class="text-2xl lg:text-2xl font-semibold text-red-400">French A2</span>
                 <span class=`fi fis fi-fr`/>
             </li>
     </ul>
 </div>    
 <nav class="flex flex-row mt-2 gap-x-3">
-        <Socials class="border-cyan-500 borde " href="https://www.linkedin.com/in/fabi%C3%A1n-urrutia-ab328b2aa">
+        <Socials class="rounded-md ring-4 ring-cyan-500 shadow-[0_0_15px_5px_rgba(6,182,212,0.5)] ease-in transition-all" href="https://www.linkedin.com/in/fabi%C3%A1n-urrutia-ab328b2aa">
             Linkedin
             <LinkedinItem class="size-6"/>
         </Socials>
-        <Socials class="border-red-400 borde" href="https://github.com/fauchx">
-            Github
-            <GithubItem class="size-8"/>
-        </Socials>
-        <Socials class="border-emerald-400 borde ml-auto" href="https://drive.google.com/file/d/1XXfdeV7agSEmRXJicUbwCPJYVyDcjt9x/view?usp=sharing" >
+        <Socials 
+        class="rounded-md ml-1 ring-4 ring-red-400 shadow-[0_0_15px_5px_rgba(248,113,113,0.5)] ease-in transition-all" href="https://github.com/fauchx">
+        Github
+        <GithubItem class="size-8" />
+      </Socials>      
+        <Socials class="rounded-lg ring-4 ring-emerald-400 shadow-[0_0_15px_5px_rgba(52,211,153,0.5)] ease-in transition-all ml-auto" href="https://drive.google.com/file/d/1XXfdeV7agSEmRXJicUbwCPJYVyDcjt9x/view?usp=sharing" >
             My CV
             <FileItem class="size-6"/>
         </Socials>
@@ -68,14 +70,17 @@ import "/node_modules/flag-icons/css/flag-icons.min.css";
     .img-photo{
         width: 16rem;
         height: 19rem;
-        box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
         transition:all .5s ease;
+    }
+    h2{
+        font-family: 'Bungee Shade', system-ui;
     }
     .borde{
     transition:all .5s ease;
     }
-    .borde:hover{
-        box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3);
+    .borde:hover,
+    .borde:focus {
+    box-shadow: 2px 8px 4px -6px hsla(0, 0%, 0%, 0.3);
     }
     ::marker {
 	content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' width='14' viewBox='0 0 50 50'%3E%3Cpath d='M46.4 16.2c-2.3-2.3-5.4-3.5-8.4-4.5-.5-.2-1.1-.3-1.6-.5-1.6-1.6-3.7-2.8-6.2-3.2-1-.2-1.9.1-2.5.6-.9-.3-1.8-.6-2.7-.8-3.2-1-6.4-1.8-9.5-.1-1 .5-1.9 1.2-2.7 2-6.4 1.4-11.7 5-12.4 12.7C0 27 1.9 31.5 4.9 34.9c.1.6.2 1.1.4 1.7 1 3.2 3.3 5.7 6.7 6.5 2.7.6 5.4-.2 7.9-1.2 3.3.4 6.7.3 9.9 0 6.5-.7 13.3-2.8 17.1-8.5 3.6-5.2 4-12.6-.5-17.2zm-17.3.9c2.1.4 4 1.7 4.7 3.8 0 .5-.1 1.1-.2 1.6-.3 1.4-.8 2.6-1.6 3.7-.7.2-1.5.1-2.3-.4-.8-.4-1.6-1-2.2-1.6-.4-.4-1.2-1.7-1.6-1.9 3.4 1.3 5.1-3 3.2-5.2zm-11.6 9.7c.2-1.9 1.1-3.9 2.3-5.5-.4 2.1.3 4.2 1.7 6 1.3 1.7 3.1 3.2 5 4.2-.2.1-.4.2-.6.4-.1 0-.1.1-.2.1-3.9.2-8.7-.8-8.2-5.2zm-6.4 3.1c.1.3.1.7.2 1 .2.6.4 1.2.7 1.8-.4-.2-.7-.5-1-.7.1-.8.1-1.4.1-2.1zm31.2-1.3c-.9 1.7-2.1 3.1-3.7 4.1 2-2.1 3.4-4.7 4-7.6.2-.7.3-1.4.3-2.1.6 1.5.5 3.3-.6 5.6z'/%3E%3C/svg%3E") ' ';

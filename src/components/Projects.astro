@@ -2,14 +2,14 @@
 import data from "../items/data/projects.json"
 ---
 <div class="px-22">
-    <h2 class="text-6xl text-center text-red-400 mb-10">
+    <h2 class="text-6xl text-center text-gray-900 mb-10">
         PROJECTS
     </h2>
     <div class="grid sm:grid-cols-2 grid-col-1 gap-y-6 gap-x-24">
         {data.map((project) => (
             <article class="flex flex-col project-item justify-center items-center">
                 <a href={project.url} target="_blank">
-                    <img src={project.avatar} alt={project.name} class="imga hover:scale-110 hover:mb-4 border-yellow-300 border-dotted border-4 self-center"/>
+                    <img src={project.avatar} alt={project.name} class="imga hover:scale-110 hover:mb-4 relative p-4  rounded-lg ring-4 ring-yellow-300 shadow-[0_0_15px_5px_rgba(253,224,71,0.5)] self-center"/>
                 </a>
                 <h3 class="text-center text-3xl text-cyan-400">
                     {project.name}
